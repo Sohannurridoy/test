@@ -361,7 +361,7 @@ def cek_akun():
 ###---[CEK HASAN CRACK ]---###
 def cek_HASAN():
 	no,nom = 0,[]
-	one = input(f' [{hh}1{P}] cek HASAN💚 akun ok\n [{hh}2{P}] cek HASAN💔 akun cp\n menu : ')
+	one = input(f' [{hh}1{P}] cek HASAn💚 akun ok\n [{hh}2{P}] cek HASAN💔 akun cp\n menu : ')
 	if one in ['1','01']:
 		try:ok = os.listdir('OK')
 		except:sys.exit(f" [{M}>{P}] tidak HASAN💚 ok")
