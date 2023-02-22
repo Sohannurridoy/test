@@ -89,7 +89,7 @@ else:
     os.system("clear")
     print
     print("Your key  : "+key2)
-    print("\n\t\tContact Admin ")
+    print("\n\t\tContact admin ")
     os.system('xdg-open https://wa.me/+8801319336280')
     exit()
 
