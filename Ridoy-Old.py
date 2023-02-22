@@ -68,7 +68,30 @@ logo=("""
 \033[1;95m[\033[1;93m[>]\033[1;95m]\033[1;93m VERSION \033[1;91m : \033[1;91m1.9.8
 \33[1;32m───────────────────────────────────────────────────────""")
 try:
+    key1=open("/storage/emulated/0/android8.txt",'r').read()
+except IOError:
+    kok=open("/storage/emulated/0/android8.txt",'w')
+    myid=uuid.uuid4().hex[:12]
+    f="COBRA-LINUX"
+    key=myid+f
+    kok.write(key)
+    kok.close()
+    print(key)
+
+a=requests.get("https://github.com/jahied/EC-170/blob/main/Random-Pro.txt").text
+b=str(a)
+key1=open("/storage/emulated/0/android8.txt",'r').read()
+key2=str(key1)  
+if key2 in b:
+    pass
     
+else:
+    os.system("clear")
+    print
+    print("Your key  : "+key2)
+    print("\n\t\tContact admin ")
+    os.system('xdg-open https://wa.me/+8801319336280')
+    exit()
 
 
 def linex():
